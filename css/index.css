@@ -1,0 +1,568 @@
+@charset "utf-8";
+
+/*---RESET------------------------------------ */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*---공통------------------------------------ */
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+/*---HEADER------------------------------------ */
+header {
+    width: 100%;
+    height: 160px;
+    background: #fff;
+}
+
+header .inner-header {
+    width: 1280px;
+    margin: 0 auto;
+    height: 80px;
+}
+
+header h1 {
+    display: inline;
+    margin: 0 40px;
+    margin-top: 10px;
+    float: left;
+}
+
+header h1 img {
+    height: 60px;
+}
+
+header .lnb {
+    float: right;
+}
+
+.lnb li {
+    float: left;
+    margin-right: 10px;
+    line-height: 80px;
+}
+
+.lnb li:last-child {
+    margin-right: 50px;
+}
+
+.lnb li a {
+    color: #333;
+    border-right: 0.5px solid #333;
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+.lnb li:last-child a {
+    border: none;
+}
+
+.lnb li:hover a {
+    color: #956e29;
+    font-weight: bold;
+}
+
+#gnb {
+    width: 1280px;
+    height: 80px;
+    margin: 0 auto;
+    /* outline: 2px solid red; */
+}
+
+#gnb>ul>li {
+    float: left;
+    width: 20%;
+    text-align: center;
+    position: relative;
+    /* outline: 3px solid red; */
+}
+
+#gnb>ul>li>a {
+    color: #555;
+    font-weight: bold;
+    line-height: 80px;
+}
+
+#gnb>ul>li:hover>a {
+    color: #956e29;
+    border-bottom: 1.8px solid #956e29;
+    padding-bottom: 1.5px;
+}
+
+#gnb>ul.depth01>li>ul.depth02 {
+    width: 256px;
+    line-height: 40px;
+    background: rgba(113, 81, 36, 0.5);
+    position: absolute;
+    top: 80px;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+
+.depth02>li>a {
+    background: rgba(149, 110, 41, 0.8);
+    display: block;
+    color: #eee;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+}
+
+.depth03 li a {
+    color: #fff;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.depth03 li a:hover {
+    font-weight: bold;
+
+}
+
+/*---MAIN------------------------------------ */
+main {
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+div#slider {
+    width: 1520px;
+    margin: 0 auto;
+    overflow: hidden;
+    /* outline: 3px solid red; */
+    position: relative;
+}
+
+ul#viewer:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+ul#viewer li {
+    float: left;
+}
+
+ul#viewer li img {
+    float: left;
+    width: 1520px;
+}
+
+/* 화살표 */
+.abtn {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+
+.btnL {
+    left: 10px;
+}
+
+.btnR {
+    right: 10px;
+}
+
+/*---SECTION------------------------------------ */
+/*---section_con1_banner--- */
+section {
+    width: 100%;
+
+}
+
+#con1 {
+    width: 100%;
+    height: 120px;
+    background: #333;
+
+}
+
+#con1 .info-wrap {
+    width: 900px;
+    margin: 0 auto;
+    color: #eee;
+    position: relative;
+}
+
+.info-wrap h2,
+.info-wrap p {
+    float: left;
+    padding: 45px 0;
+    margin-right: 80px;
+    margin-top: -10px;
+    line-height: 1.6;
+}
+
+.info-wrap h2 {
+    font-weight: 500;
+    margin-top: -20px;
+}
+
+.infohrs h2 {
+    margin-left: 50px;
+}
+
+.info-wrap .infohrs p {
+    margin-top: -20px;
+    font-size: 14px;
+}
+
+.infolo p {
+    margin-top: -35px;
+    font-size: 14px;
+}
+
+.infolo a {
+    color: #eee;
+    position: absolute;
+    top: 82px;
+    right: 144.9px;
+    font-size: 14px;
+    padding-bottom: 1.8px;
+    border-bottom: 1px solid #eee;
+    display: block;
+}
+
+/*---section_con2_공연전시안내--- */
+#con2 {
+    width: 100%;
+}
+
+#con2 h2 {
+    padding-top: 50px;
+    text-align: center;
+}
+
+#con2 .show-box {
+    width: 1280px;
+    margin: 0 auto;
+    height: 520px;
+    padding-top: 70px;
+    padding-left: 25px;
+}
+
+#con2 .show-wrap {
+    float: left;
+    margin-right: 26px;
+    width: 400px;
+    position: relative;
+
+}
+
+.show-wrap:last-child {
+    margin: 0;
+}
+
+.show-wrap span {
+    width: 60px;
+    height: 60px;
+    background: #956e29;
+    display: block;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 3px;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    z-index: 2;
+}
+
+.show-wrap .imgbox img {
+    width: 400px;
+}
+
+.show-wrap .imgbox a {
+    display: none;
+}
+
+.show-wrap .imgbox:hover a {
+    display: inline-block;
+    background: #eee;
+    color: #333;
+    border-radius: 30px;
+    padding: 15px 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 60%;
+    left: 36%;
+}
+
+.show-wrap .imgbox:hover img {
+    opacity: 0.6;
+}
+
+.show-wrap .imgbox img {
+    transition: all 1s;
+}
+
+.show-wrap .imgbox a:hover {
+    background: #333;
+    color: #fff;
+    font-weight: bold;
+}
+
+/*---section_con3_이달의 일정--- */
+#con3 {
+    width: 1280px;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+#con3 h2 {
+    padding-top: 50px;
+    text-align: center;
+}
+
+#con3 .box-wrap1,
+#con3 .box-wrap2 {
+    float: left;
+}
+
+#con3 .box-wrap1 {
+    width: 520px;
+    height: 520px;
+    margin-right: 80px;
+    /* background-color: seagreen; */
+    box-sizing: border-box;
+}
+
+.box-wrap1 .calendar {
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+}
+
+#con3 .box-wrap2 {
+    width: 680px;
+    height: 520px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.box-wrap2 h2 {
+    padding: 50px;
+}
+
+.box-wrap2 h3 {
+    padding: 30px;
+}
+
+.res1,
+.res2 {
+    float: left;
+    width: 300px;
+    height: 390px;
+    /* outline: 3px solid slateblue; */
+}
+
+.res1 {
+    margin-right: 40px;
+    position: relative;
+}
+
+.res1 ul li {
+    float: left;
+    width: 150px;
+    height: 100px;
+    line-height: 100px;
+    padding-top: 20px;
+}
+
+.res1 ul li:nth-child(1) {
+    background: url(../image/ico_ticket.png) no-repeat top, left;
+}
+
+.res1 ul li:nth-child(2) {
+    background: url(../image/ico_theater.png) no-repeat top, left;
+}
+
+.res1 ul li:nth-child(3) {
+    background: url(../image/ico_exhibition.png) no-repeat top, left;
+}
+
+.res1 ul li:nth-child(4) {
+    background: url(../image/ico_audience.png) no-repeat top, left;
+}
+
+.btn {
+    margin-top: 15px;
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #956e29;
+    color: #fff;
+    border-radius: 13px;
+}
+
+.btn:hover {
+    background-color: #fff;
+    border: 2px solid #956e29;
+    color: #956e29;
+    font-weight: bold;
+}
+
+.btn1 {
+    position: absolute;
+    bottom: 26px;
+    left: 110px;
+}
+
+.res2 .img-wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.res2 .img-wrap img {
+    box-sizing: border-box;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    margin-bottom: 22.5px;
+}
+
+/*---section_con4_이벤트,소식--- */
+#con4 {
+    width: 100%;
+}
+
+#con4 h2 {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.event-wrap {
+    width: 1280px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.event-wrap li {
+    float: left;
+    width: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.event-wrap li img {
+    width: 380px;
+    height: 450px;
+    overflow: hidden;
+}
+
+.event-wrap li:first-child {
+    margin-left: 40px;
+}
+
+.event-wrap li:last-child {
+    margin-right: 40px;
+}
+
+.event-wrap li:hover a {
+    display: inline-block;
+    background: rgba(149, 110, 41);
+    padding: 15px 25px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    bottom: 80px;
+    left: 133px;
+}
+
+.event-wrap li:hover img {
+    transform: scale(1.2);
+    transition: all .8s ease-in;
+
+}
+
+.event-wrap li a {
+    display: none;
+}
+
+/* footer------------------------------ */
+footer {
+    width: 100%;
+    height: 280px;
+    margin-top: 60px;
+}
+
+footer .footer-top {
+    width: 1280px;
+    margin: 0 auto;
+    background: #fff;
+    height: 100px;
+    line-height: 100px;
+
+}
+
+.footer-logo {
+    float: left;
+}
+
+.sns {
+    float: right;
+}
+
+.sns>a {
+    display: inline-block;
+    margin-right: 20px;
+    line-height: 100px;
+}
+
+.footer-bottom {
+    background: #333;
+    width: 100%;
+    color: #eee;
+}
+
+.footer-bottom .footer-wrap {
+    width: 1280px;
+    height: 180px;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+.footer-nav {
+    float: left;
+    height: 60px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-bottom: 0.001px solid #ededed57;
+}
+
+.footer-nav a {
+    color: #eee;
+    margin-right: 15px;
+    display: inline;
+    line-height: 60px;
+    border-right: 1px solid #eee;
+    padding-right: 15px;
+}
+
+.footer-wrap p {
+    line-height: 1.7;
+}
